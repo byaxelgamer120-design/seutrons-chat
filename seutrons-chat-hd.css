@@ -1,0 +1,142 @@
+/* SEUTRONS - CHAT HD V2 */
+:root {
+    --font-family: 'Inter', 'Segoe UI', sans-serif !important;
+    --author-font-size: 15px !important;
+    --comment-font-size: 15px !important;
+    --message-line-height: 19px !important;
+    --message-font-weight: 400 !important;
+    --name-font-weight: 600 !important;
+    --highlight-base: transparent !important;
+    --highlight-base2: transparent !important;
+}
+
+/* DISTRIBUCION DE LOS MENSAJES */
+.largeavatar .highlight-chat {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    padding: 5px 6px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* CONTENEDOR DEL AVATAR */
+.hl-leftside {
+    position: relative !important;
+    flex: 0 0 36px !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    margin: 0 !important;
+}
+
+/* FOTO DE PERFIL */
+.hl-leftside .hl-profile-pic {
+    width: 36px !important;
+    height: 36px !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+/* ICONO DE LA PLATAFORMA */
+.hl-leftside .avatar-badge {
+    position: absolute !important;
+    width: 17px !important;
+    height: 17px !important;
+    max-width: 17px !important;
+    max-height: 17px !important;
+    right: -3px !important;
+    bottom: -2px !important;
+    top: auto !important;
+    left: auto !important;
+    float: none !important;
+    object-fit: contain !important;
+    z-index: 2 !important;
+}
+
+/* CONTENEDOR DEL TEXTO */
+.hl-rightside {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    text-align: left !important;
+}
+.hl-righttopline {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+.hl-rightside .hl-message {
+    display: block !important;
+    width: 100% !important;
+    margin: 2px 0 0 0 !important;
+    padding: 0 !important;
+}
+
+/* NOMBRES Y COMENTARIOS */
+.hl-name,
+.hl-content {
+    font-family: 'Inter', 'Segoe UI', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 19px !important;
+    letter-spacing: 0 !important;
+    -webkit-text-stroke: 0 !important;
+    text-shadow:
+        0 1px 2px rgba(0,0,0,0.95),
+        0 0 1px #000000 !important;
+}
+.hl-name {
+    font-weight: 600 !important;
+    height: auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    overflow-wrap: anywhere !important;
+    white-space: normal !important;
+}
+.hl-content {
+    color: #FFFFFF !important;
+    font-weight: 400 !important;
+    overflow-wrap: anywhere !important;
+}
+
+/* TWITCH - MORADO */
+.highlight-chat[data-source-type="twitch"] .hl-name,
+.highlight-chat:has(img[src$="/twitch.png"]) .hl-name {
+    color: #BF94FF !important;
+}
+
+/* KICK - VERDE */
+.highlight-chat[data-source-type="kick"] .hl-name,
+.highlight-chat:has(img[src$="/kick.png"]) .hl-name {
+    color: #53FC18 !important;
+}
+
+/* YOUTUBE - ROJO */
+.highlight-chat[data-source-type="youtube"] .hl-name,
+.highlight-chat:has(img[src$="/youtube.png"]) .hl-name {
+    color: #FF7777 !important;
+}
+
+/* TIKTOK - CIAN */
+.highlight-chat[data-source-type="tiktok"] .hl-name,
+.highlight-chat:has(img[src$="/tiktok.png"]) .hl-name {
+    color: #25F4EE !important;
+}
+
+/* FACEBOOK - AZUL */
+.highlight-chat[data-source-type="facebook"] .hl-name,
+.highlight-chat:has(img[src$="/facebook.png"]) .hl-name {
+    color: #60A5FA !important;
+}
